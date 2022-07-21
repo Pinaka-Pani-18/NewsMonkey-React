@@ -1,0 +1,12 @@
+Business
+Entertainment
+General
+Health
+Science
+Sports
+Technology
+           // next and prev Buttons
+            <div className="container d-flex justify-content-between">
+                <button disabled={this.state.page<=1} type="button" onClick={this.handlePrevButton} className="btn btn-dark"> &larr; Previous</button>
+                <button disabled={this.state.page + 1 > Math.ceil(this.state.totalResults/this.props.pageSize)}type="button" onClick={this.handleNextButton} className="btn btn-dark">Next &rarr; </button>
+             </div>
